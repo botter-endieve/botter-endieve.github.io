@@ -1,0 +1,100 @@
+main {
+  /* debug */
+  /* background-color: cyan; */
+}
+
+/* index2.html -> h1 TypeWriter  */
+#ityped {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #999;
+  border: 1px solid #eee;
+  background-color: #fcfcfc;
+  border-radius: 10px;;
+  padding: 0.5rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* index2.html -> h1 TypeWriter  */
+
+/* .container */
+.container {
+  /* debug */
+  /* background-color: olive; */
+  margin-top: 1rem;
+  height: auto;
+}
+/* .container */
+
+/* .boxes */
+.box {
+  /* debug */
+  /* background-color: darkgreen; */
+  margin-bottom: 1rem;
+}
+
+.box1:hover {
+  /* debug */
+  /* background-color: brown; */
+}
+
+.box2 {
+  /* background-color:burlywood */
+}
+
+.box3 {
+  /* background-color:cornflowerblue; */
+}
+
+.box4 {
+  /* background-color:darkseagreen; */
+}
+
+.txt_deco {
+  font-family: 'Orbitron', sans-serif;
+  color: #999;
+  font-size:small;
+}
+
+.txt_left {
+  text-align: left;
+}
+/* .boxes */
+
+.others_h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: large;
+  color: #999;
+  background-color: #eee;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-radius: 10px;
+}
+
+.others_h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: small;
+  color: #999;
+  background-color: #eee;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.others_p {
+  font-size: small;
+  color: #999;
+  padding-left: 1rem;
+}
+
+/* footer */
+.row > footer {
+  /* debug */
+  /* background-color: blueviolet; */
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: #999;
+  font-family: 'Orbitron', sans-serif;
+}
+/* footer */
