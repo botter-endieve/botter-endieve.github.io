@@ -1,0 +1,1504 @@
+a {
+  color:#666;
+}
+
+hr {
+  color: #999;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+
+/* a:hover {
+  color: red;
+} */
+
+header {
+  position: fixed;
+  text-align: center;
+  /* color:#999; */
+  top: 2rem;
+  display: block;
+  width: 100%;
+}
+
+#ft {
+  text-align: center;
+  color:#999;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* --------------------.Signiture-------------------- */
+#name {
+  /* debug */
+  /* background-color: darkorange; */
+  display: block;
+  margin-top: -10px;
+}
+
+#typewriter {
+  display: inline-block;
+  color:#999;
+  font-family: 'Orbitron', sans-serif;
+  font-size: larger;
+  width: auto;
+  padding: 0.5rem;
+  opacity: 0;
+
+  animation-name: blink;
+  animation-delay: 6.5s;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blink {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+/* --------------------.Signiture-------------------- */
+
+.container {
+  /* debug */
+  /* background-color: blueviolet; */
+  width: 1024px;
+  height: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.base {
+  position: absolute;
+  border: double #ccc 5px;
+}
+
+.box {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border: double #ccc 5px;
+  border-radius: 5px;
+  box-shadow: 5px 3px 5px #ccc;
+}
+
+.circle {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: solid #ccc 5px;
+  border-radius: 50%;
+  opacity: 0;
+
+  animation-name: Circles;
+  animation-delay: 3.7s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Circles {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cir_1 {
+  top: calc(100px - 15px);
+  /* left: calc( (100% - 50%) / 2 + 200px - 80px + (10px * 2)); */
+  left: calc((100% - 50%) / 2 + 200px - 60px);
+}
+
+.cir_2 {
+  top: calc(200px - 13px);
+  left: calc((100% - 50%) / 2 - (20px * 3) - 4px);
+}
+
+.cir_3 {
+  top: calc(550px - 13px);
+  left: calc((100% - 50%) / 2 - 20px - 4px);
+}
+
+.cir_4 {
+  top: 350px;
+  left: 637px;
+  background-color: #ccc;
+}
+
+.cir_5 {
+  top: calc(200px - 10px);
+  left: calc(895px);
+}
+
+/* ------------------.rect_rbtm -------------------- */
+
+/* ------------------.rect_rbtm -------------------- */
+
+.icon_color {
+  color: #666;
+}
+
+/* ---------------------.male----------------------- */
+div.base.male {
+  /* debug */
+  /* background-color: yellow; */
+  position: relative; /* こんにちは用 */
+  width: 140px;
+  height:auto;
+}
+
+.male {
+  border: none;
+  top: 150px;
+  left: 520px;
+  opacity: 0;
+  
+  animation-name: Male;
+  animation-duration: 0.3;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Male {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.male:hover {
+  transition-duration: 1s;
+  animation-name: male_slide;
+  transform: translateX(10px);
+  opacity:1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes male_slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.hello {
+  display: none;
+  background-color: #ccc;
+  position: absolute;
+  padding: 0.5rem;
+  border: solid #ccc 1px;
+  border-radius: 5px;
+  color: #666;
+
+  top: 0;
+  left: 25px;
+
+  transition-duration: 1s;
+  transition-delay: 1s;
+}
+
+.hello_tip {
+  /* debug */
+  /* background-color: blue; */
+  position: absolute;
+  display: none;
+  width: 10px;
+  height: 10px;
+  border: solid #ccc 1px;
+  transform: rotate(-45deg);
+  border-right: none;
+  border-bottom: none;
+  background-color:#ccc;
+
+  top: 5px;
+  left: 20px;
+}
+
+/* ---------------------.male----------------------- */
+
+/* ------------------.tree & bird------------------- */
+#tree_icon {
+  opacity: 0;
+
+  animation-name: Tree_icon;
+  animation-fill-mode: forwards;
+  animation-duration: 0.3s;
+  animation-delay: 2.1s;
+}
+
+@keyframes Tree_icon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* #tree_icon:hover {
+  animation: pulse;
+  animation-duration: 0.6s;
+} */
+
+div.base.tree {
+  /* debug */
+  /* background-color: green; */
+  position: relative; /* こんにちは用 */
+}
+
+.tree {
+  position: absolute; /* div.base.tree */
+  border: none;
+  width: 200px;
+  height: 200px;
+
+  top: 300px;
+  left: 730px;
+
+  position: relative; /* .tree i */
+}
+
+.tree i {
+  position: absolute;
+  display: inline-block;
+  top: 150px;
+  color: #999;
+}
+
+#bird {
+  position: absolute;
+  display: inline-block;
+  color: #666;
+  top:135px;
+  left: 10px;
+  opacity: 0;
+
+  animation-name: Bird;
+  animation-fill-mode: forwards;
+  animation-duration: 0.3s;
+  animation-delay: 2.4s;
+}
+
+@keyframes Bird {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#bird:hover {
+  animation-fill-mode: forwards;
+  transform: translateX(300px) translateY(-50px) scale(0);
+  transition-timing-function: ease-in-out;
+  opacity: 0;
+  transition-duration: 2s;
+}
+
+@keyframes bird_fly {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transition-property : transform,transition-timing-function;
+    opacity: 0;
+  }
+}
+
+/* ------------------.tree & bird-------------------- */
+
+/* -------------------.profile ---------------------- */
+.profile {
+  /* debug */
+  /* background-color: blue; */
+  border-radius: 50% 5px 50% 20%;
+  position: absolute; /* .container */
+  color: #666;
+  opacity: 0;
+
+  animation-name: Profile;
+  animation-duration: 0.3s;
+  animation-delay: 2.7s;
+  animation-fill-mode: forwards;
+
+  top:calc(200px + 100px + 20px);
+  left:calc(200px + (100px * 1.414) + 200px + 200px);
+}
+
+@keyframes Profile {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+    /* background-color: #f5f5f5; */
+  }
+}
+
+.profile h1 {
+  /* debug */
+  /* background-color: cadetblue; */
+  position: absolute;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: small;
+
+  top:calc((100% - 3rem) / 3 + 10px);
+  left: calc((100% - 2.5rem) / 2 - 0.2rem);
+}
+
+.profile h1:hover {
+  animation: rubberBand;
+  animation-duration: 1s;
+}
+/* -------------------.attention ---------------------- */
+.attention {
+  /* debug */
+  /* background-color: cadetblue; */
+  position: absolute;
+  width: 130px;
+  height: 100px;
+  opacity: 0;
+
+  top:calc(100px + 100px + 50px);
+  left:calc(100px + 50px);
+
+  animation-name: Attention;
+  animation-delay: 6.8s;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Attention {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.attention_mesBox {
+  /* debug */
+  background-color: #999;
+  border-radius: 6px;
+  color: white;
+  position: relative;
+  font-size: small;
+  width: 100;
+  height: 2rem;
+
+  top:calc((100% - 2rem) / 2);
+  position: absolute;
+}
+
+.attention_mesBox p {
+  text-align: center;
+  padding: 0.3rem;
+  padding-top: 0.6rem;
+}
+
+.arrow_base {
+  position: absolute;
+  height: 1px;
+  background-color: #666;
+}
+
+.line1 {
+  width: 30px;
+  
+  top: 1rem;
+  left:calc(100%);
+}
+
+.line2 {
+  width: 30px;
+  transform: rotate(45deg);
+
+  top: calc(1rem + (30px / 1.414) / 2 - 0.5px);
+  left:calc(100% + 25px);
+}
+
+.arrow1 {
+  width: 10px;
+  transform: rotate(70deg);
+
+  top: calc(1rem + (30px / 1.414) / 2 + 4px);
+  left:calc(100% +  (30px * 1.414) + 1px);
+}
+
+/* -------------------.profile ---------------------- */
+
+/* 右斜め上のアニメーション */
+
+/* Profile用ダイアモンドのアニメーション */
+@keyframes dia_up {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  80% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(45deg);
+    opacity: 1.0;
+  }
+}
+
+.dia {
+  /* debug */
+  background-color: #f5f5f5;
+  height: 100px;
+  width: 100px;
+  box-shadow: 5px 3px 5px #ccc;
+  opacity: 0;
+
+  top: 313px;
+  left: calc( (100% - 50% + 95px) / 2 + 3px);
+
+  animation-name: dia_up;
+  animation-delay: 0.9s;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+/* Recent Activities */
+.activity {
+  margin-bottom: 0.3rem;
+}
+
+#recent {
+  /* background-color: #f5f5f5; */
+  display: inline-block;
+  width: auto;
+  padding-top: 2.1rem;
+  padding-right: 0.4rem;
+  color: #666;
+  font-size: small;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  transform: rotate(-45deg);
+}
+
+.dia > .horizon {
+  /* debug */
+  background-color: green;
+  position: absolute;
+  font-size:small;
+  transform: rotate(-45deg);
+  text-align: center;
+  padding-right: 0.5rem;
+  padding-left: 0.3rem;
+  
+  line-height: 1rem;
+  top: calc((100px * 1.414 / 2) - 45px);
+  left: calc((100px * 1.414 / 2) - 60px);
+}
+
+.horizon:hover {
+  animation: swing;
+  animation-duration: 0.3s;
+}
+
+/* ----------------------Lines----------------------- */
+.line_base {
+  opacity: 0;
+  animation-duration: 0.15s;
+}
+
+.rect_rbtm {
+  /* debug */
+  /* background-color: aqua; */
+  left: calc( (100% - 50% - 95px) / 2 );
+  top: 100px;
+
+  height: 100px;
+  width: 200px;
+  border-top: none;
+  border-left: none;
+  box-shadow: 3px;
+  opacity: 1;
+  
+  animation-name: left-in;
+  animation-duration: 0.3s;
+}
+
+@keyframes left-in {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1.0;
+  }
+}
+
+/* 右斜め上のアニメーション */
+@keyframes right-in {
+  0% {
+    opacity: 0;
+    transform: translateX(200px) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: none scale(1);
+  }
+}
+
+.rect_ltop {
+  /* debug */
+  /* background-color: aqua; */
+  top: calc(198px);
+  left: calc( (100% - 50% + 100px + 95px) / 2 );  /* 上下の重なりは100px */
+
+  height: 100px;
+  width: 300px;
+  border-bottom: none;
+  border-right: none;
+
+  animation-name: right-in;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+/* Recent Activities */
+@keyframes ver_line {
+  0% {
+    transform-origin: top;
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transition: scale(1.0);
+  }
+}
+
+.ver_line {
+  /* debug */
+  /* background-color: brown; */
+  height: 350px;
+  width: 100px;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+
+  top: 200px;
+  left: calc( 100% - 50% + 41px);
+
+  animation-name: ver_line;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.prof_L_rect {
+  /* debug */
+  /* background-color: darkgoldenrod; */
+  height: 350px;
+  width: 200px;
+  border-right: none;
+
+  top: calc(200px + 100px - 10px + (100px * 1.414) / 2);
+  left: 9%;
+
+  animation-name: prof_l_rect;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes prof_l_rect {
+  0% {
+    transform-origin: bottom right;
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+}
+
+.dia_right_border {
+  /* debug */
+  /* background-color: darkolivegreen; */
+  position: absolute;
+  width: 100px;
+  height: 190px;
+  border: double #ccc 5px;
+  border-radius: 5px;
+  border-left: none;
+  border-bottom: none;
+
+  top: calc(200px + 100px + (100px * 1.414) / 2 - (5px * 2));
+  left: calc(200px + (100px * 1.414) * 2 - (50px + 10px) - 5px);
+
+  animation-name: Dia_right_border;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Dia_right_border {
+  0% {
+    transform-origin: top left;
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.hr_line {
+  /* debug */
+  /* background-color: chartreuse; */
+  height: 350px;
+  width: 600px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+
+  top: 546px;
+  left: calc( 100% - 80% + 41px);
+
+  animation-name: ver_hr_line;
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ver_hr_line {
+  0% {
+    transform-origin: top left;
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+}
+
+.work1_other_line {
+  /* debug */
+  /* background-color: lawngreen; */
+  position: absolute;
+  width: 215px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  height: 5px;
+  box-shadow: none;
+
+  top: 680px;
+  left: 383px;
+
+  animation-name: Works1_line;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Works1_line {
+  0% {
+    opacity: 0;
+    transform-origin: top left;
+    transform: rotate(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-17deg);
+  }
+}
+
+.others_api_line {
+  /* debug */
+  /* background-color: rgb(57, 61, 52); */
+  position: absolute;
+  width: 110px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  height: 5px;
+  box-shadow: none;
+
+  top: 755px;
+  left: 525px;
+
+  animation-name: Api_line;
+  animation-delay: 3.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Api_line {
+  0% {
+    opacity: 0;
+    transform-origin: top left;
+    transform: rotate(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-52deg);
+  }
+}
+
+.others_anime_line {
+/* debug */
+/* background-color: rgb(57, 61, 52); */
+position: absolute;
+width: 168px;
+border-top: 0;
+border-left: 0;
+border-right: 0;
+height: 5px;
+box-shadow: none;
+
+top: 710px;
+left: 680px;
+
+animation-name: Anime_line;
+animation-delay: 3.9s;
+transform-origin: top left;
+animation-fill-mode: forwards;
+}
+
+@keyframes Anime_line {
+  0% {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(39deg);
+  }
+}
+
+.work2_other_line {
+  /* debug */
+  /* background-color:cornflowerblue; */
+  position: absolute;
+  width: 172px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  height: 5px;
+  box-shadow: none;
+  
+  top: 653px;
+  left: 700px;
+  
+  animation-name: Work2_line;
+  animation-delay: 4.1s;
+  transform-origin: top left;
+  animation-fill-mode: forwards;
+  }
+  
+  @keyframes Work2_line {
+    0% {
+      opacity: 0;
+      transform: rotate(90deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotate(-30deg);
+    }
+  }
+
+.cat_line {
+  /* debug */
+  /* background-color: blueviolet; */
+  position: absolute;
+  width: 250px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  height: 5px;
+  box-shadow: none;
+  
+  top: 198px;
+  left: 650px;
+  
+  animation-name: Cat_line;
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+  }
+  
+  @keyframes Cat_line {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* ----------------------Lines----------------------- */ 
+
+/* ----------------------.box1----------------------- */
+.box1 {
+  /* debug */
+  /* background-color: lightcoral; */
+  top: calc(200px + 100px - 10px + (100px * 1.414) + 230px);
+  left: 290px;
+  z-index: 1;
+
+  animation-name: box1_move;
+  animation-delay: 2.1s;
+  animation-fill-mode: forwards;
+}
+
+.box1_1 {
+  top: -5px;
+  left: -5px;
+  z-index: -1;
+  box-shadow: none;
+
+  animation-name: rect_zoom;
+  animation-delay: 2.1s;
+  animation-duration: 0.3s;
+}
+
+@keyframes rect_zoom {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+.box1_1:hover {
+  background-color: orange;
+  opacity: 0;
+
+  animation-name: rect_zoom;
+  transition-duration: 1s;
+}
+
+.box1 > .work {
+  position: relative;
+}
+
+.box1 .work section h1 {
+  /* debug */
+  /* background-color: cornflowerblue; */
+  position: absolute;
+  text-align: center;
+  width: auto;
+  font-family: 'Orbitron', sans-serif;
+  font-size: smaller;
+  margin-left: calc((100px / 2) - 1.8rem);
+  top: calc(50% + 2rem);
+}
+
+.box1 .work section h2 {
+  /* debug */
+  /* background-color: crimson; */
+  position: absolute;
+  text-align: center;
+  width: auto;
+  font-family: 'Orbitron', sans-serif;
+  top: calc((100px / 2) - 0.2rem);
+  margin-left: calc(50% - 1.4rem);
+  font-size: x-small;
+}
+
+/* ----------------------.box1----------------------- */
+
+/* ----------------------.box2----------------------- */
+
+.box2 > .work2 {
+  position: relative;
+}
+
+.box2 .work2 section h1 {
+  /* debug */
+  /* background-color: cornflowerblue; */
+  position: absolute;
+  text-align: center;
+  width: auto;
+  font-family: 'Orbitron', sans-serif;
+  font-size: smaller;
+  top: calc((100px / 2) - 1.2rem);
+  margin-left: calc(50% - 1.6rem);
+}
+
+.box2 .work2 section h2 {
+  /* debug */
+  /* background-color: crimson; */
+  position: absolute;
+  text-align: center;
+  width: auto;
+  top: calc((100px / 2) - 0.1rem);
+  margin-left: calc(50% - 2.4rem);
+  font-family: 'Orbitron', sans-serif;
+  font-size: x-small;
+}
+
+@keyframes box1_move {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.box2 {
+  border-radius: 50%;
+  top: calc(100px + 400px);
+  left: calc(600px + 200px + 50px - 7px);
+  z-index: 1;
+  opacity: 0;
+
+  animation-name: box2_move;
+  animation-delay: 2.4s;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes box2_move {
+  0% {
+    transform-origin: top left;
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.box2_1 {
+  /* debug */
+  /* border-color: palegreen; */
+  top: -5px;
+  left: -5px;
+  z-index: -1;
+
+  box-shadow: none;
+  border-radius: 50%;
+}
+
+.box2_1:hover {
+  transform: scale(1.5);
+  background-color: green;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
+/* ----------------------.box1----------------------- */
+
+/* --------------------.pentagon--------------------- */
+.pentagon {
+  position: relative;
+}
+
+.penta {
+  position: absolute;
+  width: 75px;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  box-shadow: none;
+  opacity: 0;
+
+  top: 370px;
+  left: 610px;
+
+  animation-duration: 1s;
+  animation-delay: 2.7s;
+  animation-fill-mode: forwards;
+}
+
+.penta1 {
+  transform: rotate(40deg);
+  animation-name: pentaGon;
+} 
+
+.penta2 {
+  transform: rotate(110deg);
+  animation-name: pentaGon2;
+} 
+
+.penta3 {
+  transform: rotate(180deg);
+  animation-name: pentaGon3;
+} 
+
+.penta4 {
+  transform: rotate(250deg);
+  animation-name: pentaGon4;
+} 
+
+.penta5 {
+  transform: rotate(320deg);
+  animation-name: pentaGon5;
+} 
+
+@keyframes pentaGon {
+  0% {
+    opacity: 0;
+    transform-origin: top right;
+    transform: rotate(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(40deg);
+  }
+}
+
+@keyframes pentaGon2 {
+  0% {
+    opacity: 0;
+    transform-origin: top right;
+    transform: rotate(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(110deg);
+  }
+}
+
+@keyframes pentaGon3 {
+  0% {
+    opacity: 0;
+    transform-origin: top right;
+    transform: rotate(0);
+
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes pentaGon4 {
+  0% {
+    opacity: 0;
+    transform-origin: top right;
+    transform: rotate(0);
+
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(250deg);
+  }
+}
+
+@keyframes pentaGon5 {
+  0% {
+    opacity: 0;
+    transform-origin: top right;
+    transform: rotate(0);
+
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(320deg);
+  }
+}
+
+.pentagon section {
+  position: relative;
+  top: 40px;
+  left: 560px;
+
+  /* 以下２行は試験 */
+  height: 100%;
+  width: 100%;
+}
+
+/* --------------------.pentagon--------------------- */
+
+/* ----------------------.Other---------------------- */
+#other {
+  /* debug */
+  /* background-color: purple; */
+  position: absolute;
+  
+  font-size: small;
+  font-family: 'Orbitron', sans-serif;
+  top: 370px;
+  left: 60px;
+
+  animation-name: OtherS;
+  animation-delay: 3.0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes OtherS {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ----------------------.Other---------------------- */
+
+/* ------------------.Animation----------------------- */
+.anime {
+  position: absolute;
+  border-radius: 40%;
+  opacity: 0;
+
+  animation-name: Ani;
+  animation-duration: 0.6s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+
+  top: 800px;
+  left: 800px;
+}
+
+@keyframes Ani {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+.anime section {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.anime h1 {
+  /* debug */
+  /* background-color: lightskyblue; */
+  position: absolute; /* .anime section */
+  font-family: 'Orbitron', sans-serif;
+  font-size: small;
+  color: #666;
+
+  top: calc( (100% / 2) - 0.5rem);
+  left: calc((100% / 2) - 2.1rem);
+}
+
+.anime h1:hover {
+  color: red;
+}
+
+.anime h2 {
+  /* debug */
+  /* background-color: magenta; */
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 8px;
+  color: #666;
+
+  top: calc(100% / 2 + 0.3rem);
+  left: calc((100% - 2rem) / 2 - 0.1rem); 
+}
+
+/* ------------------.Animation----------------------- */
+/* --------------------.WebAPI------------------------ */
+.api {
+  /* debug */
+  /* background-color: maroon; */
+  position: absolute;
+  border-radius: 45%;
+  opacity: 0;
+
+  top: 800px;
+  left: 490px;
+
+  animation-name: Api;
+  animation-duration: 1s;
+  animation-delay: 3.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Api {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.api section {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.api h1 {
+  /* debug */
+  /* background-color:mediumpurple; */
+  position: absolute; /* .anime section */
+  font-family: 'Orbitron', sans-serif;
+  font-size: small;
+  color: #666;
+
+  top: calc( (100% / 2) - 0.5rem);
+  left: calc((100% / 2) - 1.8rem);
+}
+
+.api h1:hover {
+  color: red;
+}
+
+.api h2 {
+  /* debug */
+  /* background-color: magenta; */
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 8px;
+  color: #666;
+
+  top: calc(100% / 2 + 0.3rem);
+  left: calc((100% - 2rem) / 2 - 3px); 
+}
+
+/* --------------------.WebAPI------------------------ */
+
+/* ------------------------.cat----------------------- */
+.cat {
+  position: absolute;
+  width: auto;
+  height: auto;
+  
+  top: calc(200px - 2rem);
+  left: 800px;
+
+  animation-name: Cat;
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Cat {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cat i {
+  color: #666;
+}
+
+.cat i:hover {
+  /* debug */
+  /* color: red; */
+
+  animation-duration: 0.8s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  transition-timing-function:ease-out;
+  animation-name: Cat_move;
+} 
+
+@keyframes Cat_move {
+  0% {
+    transform:scale(1.3, 0.5);
+  }
+  35% {
+    transform: translateY(-40px) scale(0.5, 1.0);
+  }
+  90% {
+    transform: translateY(10px) scale(1.3, 0.5);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* ateention cat */
+.attention_Cat {
+  top: 10px;
+  left: 50px;
+}
+
+.attention_mesBox_cat {
+  margin-left: 2.5rem;
+  opacity: 0;
+  
+  animation-name: Attention_Cat;
+  animation-delay: 6.8s;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.attention_Cat p {
+  width: 17rem;
+  padding: 0.6rem;
+}
+
+@keyframes Attention_Cat {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.line_cat {
+  width: 10px;
+  height: 1rem;
+  background-color: #999;
+  
+  top: 0.9rem;
+  left: 0;
+  transform: rotate(45deg);
+}
+/* ateention cat */
+
+.fish  {
+  position: absolute;
+  width: auto;
+  height: auto;
+
+  top: calc(200px - 1.5rem);
+  left: 820px;
+}
+
+#fish_icon {
+  opacity: 0;
+  color: #aaa;
+
+  transform: rotate(-20deg);
+  animation-delay: 1.8s;
+  animation-name: Fish;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Fish {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* ------------------------.cat----------------------- */
+
+/* --------------------.dog & home-------------------- */
+.home {
+  position: absolute;
+  width: auto;
+  height: auto;
+  
+  top: calc(200px + 100px + (100px * 1.414) + 100px - 3rem);
+  left: 430px;
+
+  animation-name: Home;
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Home {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.home i {
+  color: #666;
+}
+
+.dog {
+  position: absolute;
+  width: auto;
+  height: auto;
+  
+  top: calc(200px + 100px + (100px * 1.414) + 100px - 1.5rem);
+  left: 430px;
+
+  animation-name: Dog;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  transition-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Dog {
+  0% {
+    opacity: 1;
+    transform: translateX(-200px);
+  }
+  90% {
+    opacity: 0.8;
+    transform: translateX(0) translateY(-18px) scale(0.5);
+  }
+  100% {
+    opacity: 0.1;
+    transform: translateX(0) translateY(-18px) scale(0.4);
+  }
+}
+
+.dog i {
+  color:#666;
+}
+
+/* #clk_home {
+  position: absolute;
+  display:block;
+  color:white;
+  width: 2rem;
+  height: 2rem;
+  background-color:#999;
+  text-align: center;
+  z-index: 2;
+
+  top: 490px;
+  left: 432px;
+} */
+
+/* #wan {
+  position: absolute;
+  color:white;
+  width: 4rem;
+  height: 2rem;
+  background-color:#999;
+  text-align: center;
+
+  top: 430px;
+  left: 432px;
+} */
+
+/* --------------------.dog & home-------------------- */
+
+a {
+  color: #666;
+}
+
