@@ -936,6 +936,7 @@ animation-fill-mode: forwards;
   width: auto;
   font-family: 'Orbitron', sans-serif;
   font-size: smaller;
+  color: #666;
   top: calc((100px / 2) - 1.2rem);
   margin-left: calc(50% - 1.6rem);
 }
@@ -950,6 +951,7 @@ animation-fill-mode: forwards;
   margin-left: calc(50% - 2.4rem);
   font-family: 'Orbitron', sans-serif;
   font-size: x-small;
+  color: #666;
 }
 
 @keyframes box1_move {
@@ -1497,8 +1499,3 @@ animation-fill-mode: forwards;
 } */
 
 /* --------------------.dog & home-------------------- */
-
-a {
-  color: #666;
-}
-
