@@ -363,7 +363,12 @@
           <div id="animation"></div>
           <h2 class="others_h2">Animation&nbsp;-&nbsp;Lab&nbsp;-</h2>
           <hr>
-          <a href="https://www.youtube.com/watch?v=FyXpED_1K1c" target="_blank" rel="noopener noreferrer">ロング・フード・ドレス</a>
+            <p>
+              GitHub PagesではYouTubeの直接のサムネイルリンクを許可していない事がわかり、別タブで開く事しか現在のところ方法を思いつきません。<br>
+              お手数ですが、動画に関しては別タブでご覧ください。<br><br>
+              サムネイルだけ表示しておきます。
+            </p>
+            <a class="popup-youtube" href="https://www.youtube.com/watch?v=FyXpED_1K1c" target="_blank" rel="noopener noreferrer">ロング・フード・ドレス</a>
         </section>
         <!------------------------------------- Animation section end ------------------------------------->
 
@@ -424,5 +429,20 @@
       })
     </script>
   <!-- typewriter -->
+<!-- popup with video -->
+    <script>
+$(document).ready(function() {
+	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
+});
+    </script>
+<!-- popup with video end -->
 </body>
 </html>
