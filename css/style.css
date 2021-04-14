@@ -9,10 +9,6 @@ hr {
   margin-bottom: 0.5rem;
 }
 
-/* a:hover {
-  color: red;
-} */
-
 header {
   position: fixed;
   text-align: center;
@@ -920,6 +916,10 @@ animation-fill-mode: forwards;
   font-size: x-small;
 }
 
+.box .work a {
+  color: #666;
+}
+
 /* ----------------------.box1----------------------- */
 
 /* ----------------------.box2----------------------- */
@@ -1130,6 +1130,10 @@ animation-fill-mode: forwards;
   /* 以下２行は試験 */
   height: 100%;
   width: 100%;
+}
+
+.pentagon section a {
+  color: #666;
 }
 
 /* --------------------.pentagon--------------------- */

@@ -1,7 +1,7 @@
-main {
+/* main { */
   /* debug */
   /* background-color: cyan; */
-}
+/* } */
 
 /* index2.html -> h1 TypeWriter  */
 #ityped {
@@ -34,22 +34,22 @@ main {
   margin-bottom: 1rem;
 }
 
-.box1:hover {
+/* .box1:hover { */
   /* debug */
   /* background-color: brown; */
-}
+/* } */
 
-.box2 {
+/* .box2 { */
   /* background-color:burlywood */
-}
+/* } */
 
-.box3 {
+/* .box3 { */
   /* background-color:cornflowerblue; */
-}
+/* } */
 
-.box4 {
+/* .box4 { */
   /* background-color:darkseagreen; */
-}
+/* } */
 
 .txt_deco {
   font-family: 'Orbitron', sans-serif;
@@ -79,6 +79,7 @@ main {
   background-color: #eee;
   padding: 0.5rem;
   border-radius: 10px;
+  width: 80%;
 }
 
 .others_p {
@@ -86,6 +87,39 @@ main {
   color: #999;
   padding-left: 1rem;
 }
+
+/**
+ * Simple fade transition,
+ */
+ .mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+/**
+ * Simple fade transition End
+ */
 
 /* footer */
 .row > footer {
@@ -98,3 +132,31 @@ main {
   font-family: 'Orbitron', sans-serif;
 }
 /* footer */
+
+/* トップに戻るボタン */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  display: none;
+  width: 40px;
+  height: 40px;
+
+  background-color: #f0f0f0;
+  color: #333;
+  opacity: 0.6;
+
+  /* 透明度をふわっと変える演出 */
+  transition: opacity 2.5s;
+
+  font-size: 1.6rem;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* マウスを乗せた時に透明度を変える */
+.back-to-top:hover {
+  opacity: 1;
+}
